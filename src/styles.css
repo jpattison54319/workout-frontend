@@ -1,7 +1,14 @@
 .Collapsible__contentOuter {
-color:blue
+color:blue;
+border-color:black;
 }
 
 .Collapsible{
     color: blue;
+
 }
+
+.center {
+    display: flex;
+    justify-content: 'center';
+  }

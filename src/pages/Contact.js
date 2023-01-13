@@ -1,34 +1,38 @@
 import React from 'react';
 import Collapsible from 'react-collapsible';
 import styled from 'styled-components';
+import {Accordion} from 'react-bootstrap';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import AccordionBody from 'react-bootstrap/esm/AccordionBody';
 
-const Wrap = styled.div`
-  margin: 30px 0;
-  /**
-   * Overwrite the contentInner padding + border
-   * to ensure zero height.
-   */
-  .Collapsible__contentOuter {
-    color:blue;
-    border-color:black;
-    }
-`;
 
 
 const Contact = () => {
     return (
-        <Wrap>
-            <Collapsible trigger="Start here">
-          <p>
-            This is the collapsible content. It can be any element or React
-            component you like.
-          </p>
-          <p>
-            It can even be another Collapsible component. Check out the next
-            section!
-          </p>
-        </Collapsible>
-        </Wrap>
+        <Accordion >
+        <Container>
+            <Row>
+                <Col>
+          <Accordion.Item eventKey="0">
+            <Accordion.Header>Accordion Item #3</Accordion.Header>
+            <Accordion.Body>
+                This Sucks
+            </Accordion.Body>
+            </Accordion.Item>
+          </Col>
+          <Col>
+          <Accordion.Item eventKey="1">
+            <Accordion.Header>Accordion Item #2</Accordion.Header>
+            <Accordion.Body>
+              THIS SUCKS MORE
+            </Accordion.Body>
+          </Accordion.Item>
+          </Col>
+          </Row>
+        </Container>
+        </Accordion>
       );
   };
   
