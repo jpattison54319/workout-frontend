@@ -2,12 +2,18 @@ import { Col } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Day1Exercise1 from './Week1/Day1/Day1Exercises/Exercise1'
-import Day1Exercise2 from './Week1/Day1/Day1Exercises/Exercise2'
 import Box from '@mui/material/Box'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { useNavigate } from "react-router-dom";
+import Week1Carousel from './Week1/Week1Carousel';
+import Week2Carousel from './Week2/Week2Carousel'
+import Week3Carousel from './Week3/Week3Carousel'
+import Week4Carousel from './Week4/Week4Carousel'
+import Week5Carousel from './Week5/Week5Carousel'
+import Week6Carousel from './Week6/Week6Carousel'
+import Week7Carousel from './Week7/Week7Carousel'
+
 
 const inf = 9999999999999;
 
@@ -16,69 +22,16 @@ const Workout = () => {
     const navigate = useNavigate();
 
     return (
-        
-        <div>
-            <br></br>
-            <Row>
-                <Col>Week 1</Col>
-            </Row>
-            <hr
-        style={{
-          background: 'black',
-          color: 'black',
-          borderColor: 'black',
-          height: '1px',
-        }}
-      />
-   
-      
-
-        <Carousel 
-        style={{
-        display: "flex",
-        }} variant="dark">
-            
-          <Carousel.Item interval={inf}>
-          <div style={{display: 'flex', justifyContent: 'center'}}>
-          <Card style={{ width: '18rem' }}>
-            <Card.Body>
-                <Card.Title style={{display: 'flex', justifyContent: 'center'}}>Day 1</Card.Title>
-                <br></br>
-                <div className="text-center">
-                <Button text-align="center" variant="primary" onClick={() => navigate("/day1")} >Go To Day 1</Button>
-                </div>
-                <br></br>
-                <div className="text-center">
-                <Button text-align="center" variant="primary">Mark Day 1 Complete</Button>
-                </div>
-                <br></br>
-            </Card.Body>
-          </Card>
-          </div>
-
-          </Carousel.Item>
-          <Carousel.Item interval={inf}>
-          <div style={{display: 'flex', justifyContent: 'center'}}>
-          <Card style={{ width: '18rem' }}>
-            <Card.Body>
-                <Card.Title style={{display: 'flex', justifyContent: 'center'}}>Day 2</Card.Title>
-                <br></br>
-                <div className="text-center">
-                <Button text-align="center" variant="primary" onClick={() => navigate("/day2")} >Go To Day 2</Button>
-                </div>
-                <br></br>
-            </Card.Body>
-          </Card>
-          </div>
-
-          </Carousel.Item>
-       
-        </Carousel>
-
-        </div>
-        
-        
-      );
+        <>
+        <Week1Carousel/>
+        <Week2Carousel/>
+        <Week3Carousel/>
+        <Week4Carousel/>
+        <Week5Carousel/>
+        <Week6Carousel/>
+        <Week7Carousel/>
+        </>
+    );
     }
   
   export default Workout;
