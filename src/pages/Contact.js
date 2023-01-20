@@ -1,39 +1,59 @@
 import React from 'react';
-import Collapsible from 'react-collapsible';
 import styled from 'styled-components';
-import {Accordion} from 'react-bootstrap';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import AccordionBody from 'react-bootstrap/esm/AccordionBody';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 
 
 const Contact = () => {
+
     return (
-        <Accordion >
+        <>
         <Container>
             <Row>
                 <Col>
-          <Accordion.Item eventKey="0">
-            <Accordion.Header>Accordion Item #3</Accordion.Header>
-            <Accordion.Body>
-                This Sucks
-            </Accordion.Body>
-            </Accordion.Item>
-          </Col>
-          <Col>
-          <Accordion.Item eventKey="1">
-            <Accordion.Header>Accordion Item #2</Accordion.Header>
-            <Accordion.Body>
-              THIS SUCKS MORE
-            </Accordion.Body>
-          </Accordion.Item>
-          </Col>
-          </Row>
+                <Form>
+                    <Form.Select aria-label="InclineChestExercise">
+                    <option>Choose Exercise</option>
+                    <option value="Dumbbell Incline Bench">Dumbbell Incline Bench</option>
+                    <option value="Barbell Incline Bench">Barbell Incline Bench</option>
+                    <option value="Machine Incline Bench">Machine Incline Bench</option>
+                    </Form.Select>
+                    </Form>
+                </Col>
+                <Col>
+                <Form>
+                <Form.Control
+        type="text"
+        id="InclineChest1RepMax"
+      />
+      </Form>
+                </Col>
+
+
+
+            </Row>
+            <Button variant="primary" type="submit">
+        Submit
+      </Button>
+
+
+
+
         </Container>
-        </Accordion>
-      );
+        
+        
+        
+        </>
+    );
+
+
+
+
+
   };
   
   export default Contact;

@@ -7,27 +7,14 @@ import W1D1E2 from './Day1Exercises/Exercise2'
 import W1D1E3 from './Day1Exercises/Exercise3'
 import W1D1E4 from './Day1Exercises/Exercise4'
 import W1D1E5 from './Day1Exercises/Exercise5'
-import Box from '@mui/material/Box'
 
 const inf = 9999999999999;
 
 const Week1Day1 = () => {
+let data = 5;
+
     return (
-        
-        <div>
-            <br></br>
-            <Row>
-                <Col>Week 1</Col>
-            </Row>
-            <hr
-        style={{
-          background: 'black',
-          color: 'black',
-          borderColor: 'black',
-          height: '1px',
-        }}
-      />
-   
+   <div>
       
 
         <Carousel 
@@ -37,7 +24,7 @@ const Week1Day1 = () => {
             
           <Carousel.Item interval={inf}>
             <div style={{display: 'flex', justifyContent: 'center'}}>
-                <W1D1E1 />
+                <W1D1E1 name="butt"/>
             </div>
           </Carousel.Item>
           <Carousel.Item interval={inf}>

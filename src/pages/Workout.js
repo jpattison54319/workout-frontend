@@ -13,6 +13,7 @@ import Week4Carousel from './Week4/Week4Carousel'
 import Week5Carousel from './Week5/Week5Carousel'
 import Week6Carousel from './Week6/Week6Carousel'
 import Week7Carousel from './Week7/Week7Carousel'
+import {data} from '../data'
 
 
 const inf = 9999999999999;
@@ -20,6 +21,8 @@ const inf = 9999999999999;
 const Workout = () => {
 
     const navigate = useNavigate();
+    
+
 
     return (
         <>

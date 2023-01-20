@@ -30,21 +30,3 @@ const Layout = () => {
 };
 
 export default Layout;
-<nav>
-<Container>
-    <Row>
-  <Col>
-    <Link to="/">Home</Link>
-  </Col>
-  <Col>
-    <Link to="/blogs">Blogs</Link>
-  </Col>
-  <Col>
-    <Link to="/contact">Contact</Link>
-  </Col>
-  <Col>
-    <Link to="/login">Login</Link>
-  </Col>
-  </Row>
-</Container>
-</nav>

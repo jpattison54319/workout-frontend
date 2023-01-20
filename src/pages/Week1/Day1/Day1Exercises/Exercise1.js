@@ -3,14 +3,19 @@ import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
-import Box from '@mui/material/Box';
+import {data} from '../../../../data'
 
-const Exercise1 = () => {
+const Exercise1 = (props) => {
+
+
+
+
+
     return (
         <Card style={{ width: '30rem' }}>
           <Card.Body>
             <Card.Subtitle>Exercise 1 of 5</Card.Subtitle>
-            <Card.Title>Smith Incline Bench Press</Card.Title>
+            <Card.Title>{data[0].w1d1e1}</Card.Title>
             <Container>
             <Row>
                 <Col style={{border: '.5px solid black'}}>
@@ -19,7 +24,7 @@ const Exercise1 = () => {
                 </Col>
                 <Col style={{border: '.5px solid black'}}>
                 <h6>Sets</h6>
-                <p>3</p>
+                <p id="w1d1e1s">{props.name}</p>
                 </Col>
             </Row>
             <Row>
